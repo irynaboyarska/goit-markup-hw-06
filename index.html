@@ -55,16 +55,16 @@
           </ul>
         </address>
 
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
       <!-- mobile menu -->
-      <div class="mobile-menu is-open">
-        <div class="mobile-menu-container container">
-          <button class="close-menu-btn" type="button">
+      <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-container">
+          <button class="close-menu-btn" type="button" data-menu-close>
             <svg class="menu-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close-btn"></use>
             </svg>
@@ -87,18 +87,18 @@
             <ul class="menu-address-list">
               <li class="menu-address-item">
                 <a
-                  href="mailto:info@devstudio.com"
+                  href="tel:+110001111111"
                   target="_blank"
-                  class="menu-address-link"
-                  >info@devstudio.com</a
+                  class="menu-address-link current"
+                  >+11 (000) 111-11-11</a
                 >
               </li>
               <li class="menu-address-item">
                 <a
-                  href="tel:+110001111111"
+                  href="mailto:info@devstudio.com"
                   target="_blank"
                   class="menu-address-link"
-                  >+11 (000) 111-11-11</a
+                  >info@devstudio.com</a
                 >
               </li>
             </ul>
@@ -144,7 +144,7 @@
       <!-- <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>Order Service</button>
         </div>
       </section> -->
       <!--  #endregion hero -->
@@ -580,9 +580,9 @@
     <!-- #endregion footer -->
 
     <!-- #region popup -->
-    <!-- <div class="backdrop is-open">
+    <!-- <div class="backdrop is-open" data-modal>
       <div class="popup-container">
-        <button class="close-popup-btn" type="button">
+        <button class="close-popup-btn" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
@@ -670,5 +670,8 @@
       </div>
     </div> -->
     <!-- #endregion popup -->
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

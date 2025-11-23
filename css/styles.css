@@ -251,8 +251,7 @@ button{
 
 .mobile-menu-container{
     position: relative;
-    padding-top: 72px;
-    padding-bottom: 40px;
+    padding: 72px 16px 40px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -260,11 +259,23 @@ button{
 }
 
 .close-menu-btn{
-
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #E7E9FC;
+    padding: 0;
 }
 
 .menu-icon{
-
+    display: block;
+    fill: #2E2F42;
 }
 
 .menu-nav{
@@ -272,49 +283,64 @@ button{
 }
 
 .menu-nav-list{
-
-}
-
-.menu-list-item{
-
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
 }
 
 .menu-nav-link{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
 
+.menu-nav-link.current{
+    color: #404BBF;
 }
 
 .menu-address{
-
+    font-style: normal;
+    display: block;
 }
 
 .menu-address-list{
-
-}
-
-.menu-address-item{
-
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .menu-address-link{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
 
+.menu-address-link.current{
+    color: #4D5AE5;
 }
 
 .menu-social-list{
-
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 48px;
 }
-
-.menu-social-item{
-
-}
-
 .menu-social-link{
-
+    display: flex;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-social-icon{
-
+    fill: #F4F4FD;
 }
-
-
-
 /* #endregion header */

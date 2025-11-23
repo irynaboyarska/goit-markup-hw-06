@@ -350,7 +350,7 @@ button{
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mobile.jpg);
     padding: 72px 0;
-    max-width: 1440px;
+    max-width: 320px;
     margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
@@ -393,6 +393,7 @@ button{
 
 @media screen and (min-width: 768px) {
     .hero-section {
+        max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tablet.jpg);
     }
 
@@ -412,6 +413,7 @@ button{
 
 @media screen and (min-width: 1158px) {
     .hero-section {
+        max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-desktop.jpg);
     }
 
@@ -437,3 +439,98 @@ button{
     }
 }
 /* #endregion hero */
+
+/* #region values */
+.values {
+    padding: 96px 0;
+}
+
+.values-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    margin: 0 auto;
+}
+
+.values-list-item {
+    width: calc((100% - 72px*3) / 4);
+    width: 100%;
+}
+
+.icon-container{
+    display: none;
+}
+
+.values-item-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    margin-bottom: 8px;
+}
+
+.values-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+    .values-list{
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    
+    .values-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .values-item-title{
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1158px){
+    .values {
+        padding: 120px 0;
+    }
+
+    .values-list{
+        gap: 24px;
+    }
+
+    .values-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .icon-container {
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        background-color: #F4F4FD;
+        padding: 24px 100px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+    }
+
+    .icon {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .values-item-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .values-text{
+        font-weight: 400;
+    }
+}
+/* #endregion values */

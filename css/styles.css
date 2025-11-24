@@ -940,7 +940,6 @@ button{
         max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
-        display: flex;
         gap: 0;
         align-items: baseline;
     }
